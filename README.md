@@ -1,27 +1,35 @@
-# Risk-Prediction-Arena
-**RiskPredictionArena** is a Java console-based game where players face multiple risky logic challenges across different levels. Each level tests decision-making and problem-solving skills, and the final winner is saved to a file using Java OOP concepts and exception handling.
-🚀 Features
+# RiskPredictionArena – Java Console Game
 
-🧠 Multi-level puzzle-based gameplay
+RiskPredictionArena is a Java-based console game where players face a series of risky challenges across multiple levels. Each level tests the player's logic, decision-making, and risk prediction skills. The goal is to clear all floors and become the final winner.
 
-🎲 Randomized challenges using utility methods
+---
 
-🧱 Clean Object-Oriented Architecture
+## Features
 
-⚠️ Custom Exception Handling for invalid inputs
+- Multi-level gameplay with increasing difficulty  
+- Randomized challenges using utility methods  
+- Clean Object-Oriented architecture  
+- Custom exception handling for wrong inputs  
+- Winner details stored using file handling  
+- Replayable and unpredictable game flow  
 
-🏆 Winner data stored using File Handling
+---
 
-🔁 Replayable game with unpredictable flow
+## Technologies Used
 
-🛠 Technologies Used
-Technology	Purpose
-Java (JDK 17+)	Core programming
-OOP Concepts	Game design
-File I/O	Store winners
-Exception Handling	Validation
-Collections	Data management
-📂 Project Structure
+| Technology | Purpose |
+|-----------|---------|
+| Java (JDK 17+) | Core programming |
+| OOP Concepts | Game design |
+| File Handling | Store winners |
+| Exception Handling | Input validation |
+| Collections | Data management |
+
+---
+
+## Project Structure
+
+```
 RiskPredictionArena/
 │
 ├── src/
@@ -44,53 +52,69 @@ RiskPredictionArena/
 │               └── FileHandler.java
 │
 └── winner.txt
+```
 
-🎮 How to Run
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/RiskPredictionArena.git
+---
 
-2️⃣ Compile the Project
+## How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Hemant177/Risk-Prediction-Arena.git
+```
+
+### 2. Compile the project
+```bash
 javac -d out src/com/riskpredictionarena/Main.java
+```
 
-3️⃣ Run the Game
+### 3. Run the game
+```bash
 java -cp out com.riskpredictionarena.Main
+```
 
-🧠 Game Flow
+---
 
-Player enters their name
+## Game Flow
 
-Player passes through 5 risky floors
+- Player enters name  
+- Clears 5 risky floors  
+- Each floor gives a unique challenge  
+- Wrong answer may eliminate the player  
+- Winner name is saved in `winner.txt`
 
-Each floor presents logic-based or random challenges
+---
 
-One wrong decision may end the game
+## OOP Concepts Used
 
-On winning the final boss, the player name is saved in winner.txt
+| Concept | Implementation |
+|--------|---------------|
+| Encapsulation | Private fields in Player class |
+| Inheritance | All floors extend Floor class |
+| Polymorphism | play() method overridden in each floor |
+| Abstraction | Floor is abstract |
+| Exception Handling | InvalidMoveException |
 
-🏗 OOP Concepts Used
-Concept	Implementation
-Encapsulation	Private fields in Player class
-Inheritance	All floors extend Floor class
-Polymorphism	play() method overridden in each floor
-Abstraction	Floor defined as abstract
-Exception Handling	InvalidMoveException
-📁 Sample Output (winner.txt)
+---
+
+## Sample Output
+
+```
 Winner: Hemant
 Winner: Anurag
-Winner: Shravani
 
-🔮 Future Enhancements
+```
 
-JavaFX GUI Version
+---
 
-Scoreboard System
+## Author
 
-Multiplayer Mode
+Hemant Patil  
+Computer Engineering Graduate  
+Nashik, India  
 
-Database Integration
+---
 
-👨‍💻 Author
+## License
 
-Hemant Patil
-Computer Engineering Graduate
-Nashik, India
+This project is open-source and free for educational purposes.
